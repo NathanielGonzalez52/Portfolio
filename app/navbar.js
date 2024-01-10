@@ -25,7 +25,7 @@ export default function navbar() {
   return (
     <>
         <nav className="nav-head">
-            <a href="/"><img className="logo" src="../images/NG-3.png"></img></a>
+            <a className="linkk" href="/"><img className="logo" src="../images/NG-3.png"></img></a>
             <div>
             <ul id="navbar" className={click ? 'navbar active' : 'navbar'}>
                 <li><Link href="/" className={checkActivePath("/") ? 'active' : ''}>
