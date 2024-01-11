@@ -1,8 +1,10 @@
 import { TypeAnimation } from 'react-type-animation';
+import "./typing.css";
+
 
 const ExampleComponent = () => {
     return (
-      <TypeAnimation
+      <TypeAnimation className="typing"
         sequence={[
           // Same substring at the start will only be typed out once, initially
           'My name is Nathaniel Gonzalez',

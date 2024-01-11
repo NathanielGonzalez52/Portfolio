@@ -32,10 +32,10 @@ export default function navbar() {
                 Home
                 </Link></li>
                 <li><Link href="/sale" className={checkActivePath("/sale") ? 'active' : ''}>
-                Shop
+                About
                 </Link></li>
                 <li><Link href="/about" className={checkActivePath("/about") ? 'active' : ''}>
-                About
+                Contact Me
                 </Link></li>
             </ul>
             </div>
