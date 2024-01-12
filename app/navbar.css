@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 .logo {
     width: 40%;
     /* background-color: red; */
@@ -42,16 +44,17 @@ nav {
 }
 
 #navbar li a{
+    font-family: "Cormorant Garand", serif;
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
-    color: #FFF;
+    color: #847f7f;
     transition: 0.3s ease-in-out;
 }
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #17cf97;
+    color: #000;
 }
 
 #navbar li a:hover::after,

@@ -1,8 +1,20 @@
+
 import { TypeAnimation } from 'react-type-animation';
 import "./typing.css";
+import { useEffect, useState} from 'react';
 
 
 const ExampleComponent = () => {
+
+  const [timer, setTimer] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setTimer(true);
+    }, 100000)
+  })
+  
+    if (timer) {
     return (
       <TypeAnimation className="typing"
         sequence={[
@@ -22,6 +34,7 @@ const ExampleComponent = () => {
         repeat={0}
       />
     );
+      }
   };
 
   export default ExampleComponent;
