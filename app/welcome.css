@@ -1,7 +1,34 @@
 .landing {
+    display: flex;
+    flex-direction: column;
     background-image: url("../public/images/seigaiha.webp");
     width: 100%;
-    height: 36rem;
-    padding-top: 12rem;
-    text-align: center;
+    height: 70.6vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    row-gap: 1rem;
 }
+
+.projects-btn {
+    cursor: pointer;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: "Cormorant Garand", serif;
+    color: #000;
+    font-size: 20px;
+    background: #e0e0e0;
+    padding: 10px 20px 10px 20px;
+    border: solid #000 2px;
+    text-decoration: none;
+    transition: 0.3s;
+
+  }
+  
+  .projects-btn:hover {
+    transition: 0.3s;
+    background: #333333;
+    text-decoration: none;
+    color: #FFF;
+  }

@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "mexican";
+    src: url("../../public/fonts/La Tequila Out.ttf");
+  }
+
+.foot {
+    /* padding-bottom: 51rem; */
+    background-color: green;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.header-f {
+    font-size: 1rem;
+    padding-top: 3.5rem;
+    color: #FFFFFF;
+    font-family: "mexican";
+    padding-bottom: 0.5rem;
+    /* color: rgb(255, 0, 0); */
+}
+
+.theme-f {
+    font-size: 0.85rem;
+    color: #FFFFFF;
+    font-family: "Dosis", sans-serif;
+}
+
+.location {
+ /* background-color: blue; */
+   width: 110%;
+   padding-right: 0.7rem
+ }
+  
+.hours {
+   /* background-color: yellow; */
+   width: 100%;
+ }
+  
+.socials-f {
+   width: 100%;
+   background-color: green;
+
+ }
+  
+.social-pic {
+   /* background-color: red; */
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 2.5rem;
+  }
+  
+.socials-f .fa-brands {
+   padding: 5rem 1rem 0rem;
+   color: #FFFFFF;
+  }
+
+.copyright {
+  padding-bottom: 2.5rem;
+  }
