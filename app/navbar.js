@@ -31,10 +31,13 @@ export default function navbar() {
                 <li><Link href="/" className={checkActivePath("/") ? 'active' : ''}>
                 Home
                 </Link></li>
-                <li><Link href="/sale" className={checkActivePath("/sale") ? 'active' : ''}>
+                <li><Link href="/about" className={checkActivePath("/about") ? 'active' : ''}>
                 About
                 </Link></li>
-                <li><Link href="/about" className={checkActivePath("/about") ? 'active' : ''}>
+                <li><Link href="/projects" className={checkActivePath("/projects") ? 'active' : ''}>
+                Projects
+                </Link></li>
+                <li><Link href="/contact" className={checkActivePath("/contact") ? 'active' : ''}>
                 Contact Me
                 </Link></li>
             </ul>

@@ -1,0 +1,21 @@
+.txt {
+    font-family: "Cormorant Garand", serif;  
+}
+
+.about {
+    padding: 3rem 3rem;
+    background-image: url("../../public/images/seigaiha.webp");
+    height: 100%;
+    text-align: center;
+}
+
+.about-me {
+    font: 2.5rem;
+} 
+
+.bio {
+    padding: 1rem 15rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2;
+}

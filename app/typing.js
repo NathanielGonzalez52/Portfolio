@@ -22,7 +22,7 @@ const ExampleComponent = () => {
             'My name is Nathaniel Gonzalez',
             800, // wait 1s before replacing "Mice" with "Hamsters"
             'My name is Nathaniel Gonzalez and I am a devepo',
-            700,
+            800,
             'My name is Nathaniel Gonzalez and I am a devpole',
             650,
             'My name is Nathaniel Gonzalez and I am a developer.',
