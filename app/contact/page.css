@@ -1,9 +1,28 @@
 .contact {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../../public/images/seigaiha.webp");
+}
+
+
+.contact-details {
     height: 70.6vh;
     padding: 3rem;
     text-align: center;
     font-family: "Cormorant Garand", serif;  
-    background-image: url("../../public/images/seigaiha.webp");
+    width: 50%;
+}
+
+.envelope {
+    width: 50%;
+ }
+
+.mail {
+    width: 50%;
+    float: left;
+    margin-top: 13%;
+    position: relative;
+    margin-left: 28%;
 }
 
 .detail {
@@ -18,16 +37,10 @@
     align-items: center;
     /* padding: 0.5rem; */
     gap: 0.6rem; 
+    /* background-color: yellow; */
 }
 
-.envelope {
-    width: 26%;
- }
 
-.mail {
-    width: 100%;
-    float: left;
-}
 
 /* .connect {
     padding-top: 1rem;
