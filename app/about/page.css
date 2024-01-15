@@ -13,9 +13,22 @@
     font: 2.5rem;
 } 
 
+.icon {
+    width: 18%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
 .bio {
     padding: 1rem 15rem;
     font-weight: bold;
     font-size: 1.3rem;
     line-height: 2;
 }
+
