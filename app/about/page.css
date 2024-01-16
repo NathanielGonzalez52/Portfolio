@@ -3,14 +3,14 @@
 }
 
 .about {
-    padding: 3rem 3rem;
+    padding: 1rem 1rem;
     background-image: url("../../public/images/seigaiha.webp");
     height: 100%;
     text-align: center;
 }
 
 .about-me {
-    font: 2.5rem;
+    font-size: 2rem;
 } 
 
 .icon {
@@ -26,9 +26,22 @@
 }
 
 .bio {
-    padding: 1rem 15rem;
+    padding: 2rem 1rem;
     font-weight: bold;
     font-size: 1.3rem;
     line-height: 2;
 }
 
+@media screen and (min-width:700px) {
+    .about {
+        padding: 3rem 3rem;
+        text-align: center;
+    }
+
+    .bio {
+        padding: 1rem 15rem;
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 2;
+    }
+}

@@ -8,7 +8,7 @@ export default function about() {
     <>
     <Navbar/>
         <div className="about txt">
-            <h1 classsName="about-me txt">About Me</h1>
+            <h1 className="about-me txt">About Me</h1>
             <div className="bio">
                 <img className="icon left" src="../../images/analysis.png"></img>
                 <div className="one txt">
