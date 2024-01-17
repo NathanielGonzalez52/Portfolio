@@ -3,6 +3,7 @@ import "./welcome.css"
 import React, { useState, useEffect } from 'react';
 import Type from "./typing";
 import Fade from "react-reveal/Fade";
+import Footer from "./footer";
 
 
 export default function welcome() {
@@ -23,6 +24,7 @@ export default function welcome() {
         <button className="projects-btn">Projects</button>
       </Fade>
          </div>
+      <Footer/>
     
     </>
   )
