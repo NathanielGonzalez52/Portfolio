@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+.linkk {
+    /* background-color: blue; */
+    width: 30%;
+}
 
 
 .logo {
-    width: 40%;
+    width: 135%;
     /* background-color: red; */
 }
 
@@ -86,11 +90,11 @@ nav {
         justify-content: flex-start;
         flex-direction: column;
         position: fixed;
-        top: 65px;
+        top: 150px;
         right: -300px;
         width: 300px;
         height: 100vh;
-        background: #1b2430;
+        background: #FFF;
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 40px 0 0 10px;
         transition: 0.3s ease-in-out;
@@ -101,7 +105,7 @@ nav {
     }
 
     #navbar li {
-        margin-bottom: 25px;
+        margin-bottom: 30px;
     }
 
     #mobile {

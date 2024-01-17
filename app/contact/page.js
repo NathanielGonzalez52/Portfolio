@@ -7,14 +7,14 @@ export default function contact() {
   return (
     <>
     <Navbar />
-    <div className="contact">
-        <div className="envelope">
+    <div className="envelope">
             <img className="mail" src="../../images/mail.png"></img>
-        </div>
+    </div>
+    <div className="contact">
         <div className="contact-details">
-            <h1>Contact Me</h1>
-            <h3 className="detail">I would love to hear about your dream website.</h3>
-            <h3>Let's build something together.</h3>
+            <h1>Have An Idea?</h1>
+            <h3 className="detail">I would love to hear about it.</h3>
+
             <br></br>
             <form className="contact-me block">
                 <label htmlFor="frm-email"> 
@@ -28,12 +28,11 @@ export default function contact() {
                     />
                 </label>
                 {/* <div className="connect"> */}
-                    <label className="connect"></label>
                     <textarea 
                     id="freeform" 
                     name="freeform" 
-                    rows="14" 
-                    cols="60"
+                    rows="8" 
+                    cols="30"
                     placeholder="Please tell me a bit about yourself or the organization you represent"></textarea>
                     <input 
                     className="send" 

@@ -2,7 +2,7 @@
 import "./welcome.css"
 import React, { useState, useEffect } from 'react';
 import Type from "./typing";
-import Fade from "react-reveal/Fade"
+import Fade from "react-reveal/Fade";
 
 
 export default function welcome() {
@@ -19,7 +19,7 @@ export default function welcome() {
     <>
     <div className="landing">
       <Type/>
-      <Fade delay={7000} duration={2000}>
+      <Fade delay={7200} duration={2000}>
         <button className="projects-btn">Projects</button>
       </Fade>
          </div>
