@@ -19,7 +19,7 @@ export default function welcome() {
     <>
     <div className="landing">
       <Type/>
-      <Fade delay={7200} duration={2000}>
+      <Fade delay={7200} duration={1500}>
         <button className="projects-btn">Projects</button>
       </Fade>
          </div>

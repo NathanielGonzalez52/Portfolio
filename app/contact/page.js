@@ -1,12 +1,16 @@
+"use client";
+
 import React from 'react'
 import "./page.css";
 import Navbar from "../navbar";
+import Fade from "react-reveal/Fade";
 
 
 export default function contact() {
   return (
     <>
     <Navbar />
+    <Fade duration={1500}>
     <div className="envelope">
             <img className="mail" src="../../images/mail.png"></img>
     </div>
@@ -42,6 +46,7 @@ export default function contact() {
             </form>
         </div>
     </div>
+    </Fade>
       </>
   )
 }
