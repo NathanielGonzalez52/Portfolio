@@ -4,7 +4,7 @@ import React from 'react'
 import "./page.css";
 import Navbar from "../navbar";
 import Fade from "react-reveal/Fade";
-
+import Footer from "../footer";
 
 export default function contact() {
   return (
@@ -47,6 +47,7 @@ export default function contact() {
         </div>
     </div>
     </Fade>
+    <Footer />
       </>
   )
 }
