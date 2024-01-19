@@ -11,12 +11,13 @@ export default function contact() {
     <>
     <Navbar />
     <Fade duration={1500}>
+
+    <div className="contact">
     <div className="envelope">
             <img className="mail" src="../../images/mail.png"></img>
     </div>
-    <div className="contact">
         <div className="contact-details">
-            <h1>Have An Idea?</h1>
+            <h1 className="head">Have An Idea?</h1>
             <h3 className="detail">I would love to hear about it.</h3>
 
             <br></br>

@@ -24,12 +24,12 @@ const ExampleComponent = () => {
             'My name is Nathaniel Gonzalez and I am a devepo',
             800,
             'My name is Nathaniel Gonzalez and I am a devpole',
-            650,
+            900,
             'My name is Nathaniel Gonzalez and I am a developer.',
             1200
           ]}
           wrapper="span"
-          speed={60}
+          speed={70}
           style={{ fontSize: '2em', display: 'inline-block' }}
           repeat={0}
         />

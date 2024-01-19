@@ -21,7 +21,7 @@ export default function footer() {
           <a href="/sale" className = "shop-f f-link">Shop</a>
           <a href="/qa" className = "faq-f f-link">| FAQ</a>
         </div> */}
-        <p className="copyright">© {date.getFullYear()} TheNathanielGonzalez</p>
+        <p className="copyright">© {date.getFullYear()} DevelopWithNathaniel</p>
 
       </div>
 

@@ -1,11 +1,13 @@
+.head {
+    font-family: 'Oswald', sans-serif;
+}
+
 .envelope {
     background-image: url("../../public/images/seigaiha.webp");
     text-align: center;
     width: 100%;
     padding-top: 2.5rem;
     padding-bottom: 0.7rem;
-
-
  }
 
 
@@ -16,7 +18,6 @@
     background-image: url("../../public/images/seigaiha.webp");
 
 }
-
 
 .contact-details {
     height: 70.6vh;
@@ -92,23 +93,20 @@
 
 @media screen and (min-width:700px) {
     .contact-details {
-        height: 70.6vh;
-        padding: 3rem;
+        height: 50vh;
+        padding: 0.5rem;
         text-align: center;
         font-family: "Cormorant Garand", serif;  
-        width: 50%;
+        width: 100%;
     }
     
     .envelope {
-        width: 50%;
+        width: 100%;
      }
     
     .mail {
-        width: 50%;
-        float: left;
-        margin-top: 13%;
+        width: 11%;
         position: relative;
-        margin-left: 28%;
     }
     
     .detail {
