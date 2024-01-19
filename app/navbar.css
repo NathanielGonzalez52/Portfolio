@@ -11,7 +11,7 @@
 
 
 .logo {
-    width: 135%;
+    width: 40%;
     /* background-color: red; */
 }
 
@@ -82,7 +82,12 @@ nav {
     align-items: center;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
+
+    .logo {
+        width: 135%;
+    }
+
     #navbar {
         z-index: +2;
         display: flex;
