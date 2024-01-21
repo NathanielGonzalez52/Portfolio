@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Type from "./typing";
 import Fade from "react-reveal/Fade";
 import Footer from "./footer";
-
+import DarkMode from "./dark";
 
 export default function welcome() {
 
@@ -19,9 +19,10 @@ export default function welcome() {
   return (
     <>
     <div className="landing">
-      <Type/>
+      <DarkMode />
+      <Type />
       <Fade delay={6800} duration={1500}>
-        <button className="projects-btn">Projects</button>
+        <a href="/projects"><button className="projects-btn">Projects</button></a>
       </Fade>
          </div>
       <Footer/>
