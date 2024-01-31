@@ -1,14 +1,36 @@
+* {
+    transition: all 0.3s ease-in-out;
+  }
+
+:root {
+--button_background: #000;
+--button_text: #FFF;
+--text_color: #000;
+--background_color: #FFF;
+--background_image: url("../../public/images/seigaiha.webp");
+}
+
+[data-theme = "dark"] {
+--button_background: #FFF;
+--button_text: #000;
+--text_color: #FFF;
+--background_color: #000;
+--background_image: url("../../public/images/connectwork.webp");
+}
+
 .head {
     font-family: 'Oswald', sans-serif;
+    transition: none;
 }
 
 .txt {
     font-family: "Cormorant Garand", serif;  
+    color: var(--text_color);
 }
 
 .about {
     padding: 1rem 1rem;
-    background-image: url("../../public/images/seigaiha.webp");
+    background-image: var(--background_image);
     height: 100%;
     text-align: center;
 }

@@ -5,12 +5,15 @@ import Navbar from "../navbar";
 import "./page.css";
 import Footer from "../footer";
 import Fade from "react-reveal/Fade";
+import DarkMode from "../dark";
 
 export default function about() {
   return (
     <>
     <Navbar/>
     <Fade>
+    <DarkMode />
+
         <div className="about txt">
             <h1 className="about-me head">About Me</h1>
             <div className="bio">

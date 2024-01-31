@@ -5,13 +5,15 @@ import "./page.css";
 import Navbar from "../navbar";
 import Fade from "react-reveal/Fade";
 import Footer from "../footer";
+import DarkMode from "../dark";
+
 
 export default function contact() {
   return (
     <>
     <Navbar />
     <Fade duration={1500}>
-
+    <DarkMode />
     <div className="contact">
     <div className="envelope">
             <img className="mail" src="../../images/mail.png"></img>

@@ -4,15 +4,37 @@
     box-sizing: border-box;
 }
 
+:root {
+    --button_background: #000;
+    --button_text: #FFF;
+    --text_color: #000;
+    --background_color: #FFF;
+    --link_color: #847f7f;
+    --line_color: #3c3a3a;
+  }
+  
+  [data-theme = "dark"] {
+    --button_background: #000;
+    --button_text: #FFF;
+    --text_color: #000;
+    --background_color: #FFF;
+    --link_color: #b3b3b3;
+    --line_color: #ffffff;
+
+  }
+
+
 .linkk {
     /* background-color: blue; */
-    width: 30%;
+    width: 10%;
 }
 
 
 .logo {
-    width: 40%;
-    /* background-color: red; */
+    width: 120%;
+    color: var(--button_text);
+    background-image: url("../public/images/NG-3.png");
+
 }
 
 /* path {
@@ -30,7 +52,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     /* background: #1b2430; */
-    background: #FFFFFF;
+    background: var(--background_color);
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06); 
 }
@@ -52,13 +74,13 @@ nav {
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: 600;
-    color: #847f7f;
+    color: var(--link_color);
     transition: 0.3s ease-in-out;
 }
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #000;
+    color: var(--text_color);
 }
 
 #navbar li a:hover::after,
@@ -67,7 +89,8 @@ nav {
     content: "";
     width: 30%;
     height: 2px;
-    background: #17cf97;
+    /* background: #17cf97; */
+    background: var(--line_color);
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -78,7 +101,7 @@ nav {
 }
 
 #mobile i {
-    color: #FFF;
+    color: var(--text_white);
     align-items: center;
 }
 
@@ -99,7 +122,7 @@ nav {
         right: -300px;
         width: 300px;
         height: 100vh;
-        background: #FFF;
+        background: var(--background_color);
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 40px 0 0 10px;
         transition: 0.3s ease-in-out;
@@ -120,6 +143,6 @@ nav {
     #mobile i {
         font-size: 24px;
         cursor: pointer;
-        color: black;
+        color: var(--text_color);
     }
 }

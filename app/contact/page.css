@@ -1,9 +1,30 @@
+* {
+    transition: all 0.3s ease-in-out;
+  }
+
+:root {
+--button_background: #000;
+--button_text: #FFF;
+--text_color: #000;
+--background_color: #FFF;
+--background_image: url("../../public/images/seigaiha.webp");
+}
+
+[data-theme = "dark"] {
+--button_background: #FFF;
+--button_text: #000;
+--text_color: #FFF;
+--background_color: #000;
+--background_image: url("../../public/images/connectwork.webp");
+}
+
 .head {
     font-family: 'Oswald', sans-serif;
+    color: var(--text_color)
 }
 
 .envelope {
-    background-image: url("../../public/images/seigaiha.webp");
+    background-image: var(--background_image);
     text-align: center;
     width: 100%;
     padding-top: 2.5rem;
@@ -12,10 +33,9 @@
 
 
 .contact {
-
+    background-image: var(--background_image);
     /* display: flex;
     flex-direction: row; */
-    background-image: url("../../public/images/seigaiha.webp");
 
 }
 
@@ -23,10 +43,13 @@
     height: 70.6vh;
     text-align: center;
     font-family: "Cormorant Garand", serif;  
+    color: var(--text_color);
+
 }
 
 .detail {
     padding-top: 0.5rem;
+    transition: none;
 
 }
 
@@ -67,12 +90,12 @@
 
 .send {
 	/* box-shadow: inset 0px -3px 7px 0px #29bbff; */
-	background: #000;
+	background: var(--button_background);
 	/* background-color: #2dabf9; */
 	border-radius: 25px;
 	display: inline-block;
 	cursor: pointer;
-	color: #ffffff;
+	color: var(--button_text);
 	font-family: "Cormorant Garand", serif;
 	font-size: 1.3rem;
 	padding: 9px 23px;
@@ -81,9 +104,9 @@
 	/* text-shadow:0px 1px 0px #263666; */
 }
 .send:hover {
-	background: #FFF;
+	background: var(--background_color);
     transition: 0.5s;
-    color: #000;
+    color: var(--text_color);
 	/* background-color:#0688fa; */
 }
 .send:active {

@@ -1,10 +1,12 @@
 "use client";
+
 import "./welcome.css"
 import React, { useState, useEffect } from 'react';
 import Type from "./typing";
 import Fade from "react-reveal/Fade";
 import Footer from "./footer";
-import DarkMode from "./dark";
+// import DarkMode from "./dark.js";
+import {dark as DarkMode} from "./dark.js";
 
 export default function welcome() {
 
@@ -16,10 +18,12 @@ export default function welcome() {
     }, 1050)
   }, [])
 
+
   return (
     <>
+    {/* <dark /> */}
+    <DarkMode />
     <div className="landing">
-      <DarkMode />
       <Type />
       <Fade delay={6800} duration={1500}>
         <a href="/projects"><button className="projects-btn">Projects</button></a>
