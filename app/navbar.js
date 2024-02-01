@@ -1,10 +1,11 @@
 "use client"; //This is a client component
 
 import { useRouter } from 'next/navigation'
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useContext} from 'react';
 import Link from "next/link";
 import "./navbar.css";
 import { useActivePath } from "./helper";
+import { ThemeContext } from './dark';
 
 
 
@@ -14,6 +15,8 @@ export default function navbar() {
   // const [night, setNight] = useState("");
 
   // export const mode = "";
+
+  const {selectedTheme, toggleTheme} = useContext(ThemeContext);
 
 
   const checkActivePath = useActivePath()
@@ -52,7 +55,7 @@ export default function navbar() {
   return (
     <>
         <nav className="nav-head">
-            <a className="linkk" href="/"><img className="logo" src={light}></img></a>
+            <a className="linkk" href="/"><img className="logo" src={selectedTheme === "dark" ? night : light}></img></a>
             <div>
             <ul id="navbar" className={click ? 'navbar active' : 'navbar'}>
                 <li><Link href="/" className={checkActivePath("/") ? 'active' : ''}>
