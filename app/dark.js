@@ -14,7 +14,9 @@ const DarkModeContext = createContext("light");
 
 const dark = () => {
 
-    let selectedTheme = "";
+    const [selectedTheme, setSelectedTheme] = useState("");
+
+    // let selectedTheme = "";
 
     // const themeContext = createContext("light");
 
@@ -30,9 +32,11 @@ const dark = () => {
 
       useEffect (() => {
 
-        selectedTheme = localStorage.getItem("selectedTheme");
+        const checkTheme = localStorage.getItem("selectedTheme");
+
+        setSelectedTheme(checkTheme);
     
-        if (selectedTheme === "dark") {
+        if (checkTheme === "dark") {
             setDark();
         }
 
@@ -42,9 +46,12 @@ const dark = () => {
 
     const toggleTheme = (e) => {
         if (e.target.checked) {
+            setSelectedTheme("dark");
             setDark();
+
         }
         else {
+            setSelectedTheme("light");
             setLightMode();
         }
     };
@@ -59,7 +66,7 @@ const dark = () => {
                 <input type="checkbox" 
                 id="checkbox" 
                 onChange={toggleTheme} 
-                defaultChecked={ selectedTheme==="dark" }
+                checked={ selectedTheme==="dark" }
                 />
                 <div class="slider round">
                     <i class="fa-regular fa-sun"></i>
