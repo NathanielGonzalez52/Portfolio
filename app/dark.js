@@ -3,18 +3,18 @@ import React, { useEffect, useState} from "react";
 import "./dark.css";
 import { createContext } from "react";
 import { useContext } from "react";
-
 // import Image from "next/image";
 // import Sun from "../public/images/Sun.svg";
 // import Moon from "../public/images/Moon.svg";
 // import { ReactComponent as Sun } from "../public/images/Sun.svg";
 // import { ReactComponent as Moon } from "../public/images/Moon.svg";
 
-const DarkModeContext = createContext("light");
+const ThemeContext = createContext();
 
-const dark = () => {
+const dark = (props) => {
 
     const [selectedTheme, setSelectedTheme] = useState("");
+
 
     // let selectedTheme = "";
 
@@ -58,22 +58,24 @@ const dark = () => {
 
 
     return (
-        // <DarkModeContext.Provider value={{}}
-        <div class="theme-switch-wrapper">
-            {/* <i class="fa-regular fa-lightbulb"></i> */}
-            {/* <i class="fa-solid fa-lightbulb"></i> */}
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" 
-                id="checkbox" 
-                onChange={toggleTheme} 
-                checked={ selectedTheme==="dark" }
-                />
-                <div class="slider round">
-                    <i class="fa-regular fa-sun"></i>
-                    <i class="fa-solid fa-moon"></i>
-                </div>
-            </label>
-        </div>
+        <ThemeContext.Provider value={{ selectedTheme, toggleTheme }}>
+            {props.children}
+            {/* <div class="theme-switch-wrapper">
+                <i class="fa-regular fa-lightbulb"></i> *comment out
+                <i class="fa-solid fa-lightbulb"></i> *comment out
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" 
+                    id="checkbox" 
+                    onChange={toggleTheme} 
+                    checked={ selectedTheme==="dark" }
+                    />
+                    <div class="slider round">
+                        <i class="fa-regular fa-sun"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                </label>
+            </div> */}
+        </ThemeContext.Provider>
     )
 
 
@@ -106,7 +108,7 @@ const dark = () => {
 
 // export default dark;
 
-export {dark, DarkModeContext};
+export {dark, ThemeContext};
 
 
 

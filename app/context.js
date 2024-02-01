@@ -1,14 +1,10 @@
+"use client";
+
+import { create } from 'domain';
 import React from 'react';
 import { createContext } from "react";
 // import { useContext } from "react";
 
-export default function context() {
-    const [theme, setTheme] = useState("light")
+const ThemeContext = createContext();
 
-    const DarkModeContext = createContext(theme);
-
-
-  return (
-   
-  )
-}
+export default ThemeContext;
