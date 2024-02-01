@@ -1,12 +1,12 @@
 "use client";
 
 import "./welcome.css"
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import Type from "./typing";
 import Fade from "react-reveal/Fade";
 import Footer from "./footer";
 // import DarkMode from "./dark.js";
-import {dark as DarkMode, ThemeContext} from "./dark.js";
+import {dark as DarkMode} from "./dark.js";
 import Toggle from "./toggle";
 
 export default function welcome() {
@@ -19,11 +19,12 @@ export default function welcome() {
     }, 1050)
   }, [])
 
+
   return (
     <>
     {/* <dark /> */}
     {/* <DarkMode /> */}
-    <Toggle />
+    <Toggle/>
     <div className="landing">
       <Type />
       <Fade delay={6800} duration={1500}>
