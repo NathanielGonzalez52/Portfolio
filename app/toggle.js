@@ -5,10 +5,9 @@ import ThemeContext from "./dark";
 
 export default function toggle() {
 
-    const {toggleTheme} = useContext(ThemeContext);
+    const {, selectedTheme, toggleTheme} = useContext(ThemeContext);
     
     return (
-        <ThemeContext>
             <div class="theme-switch-wrapper">
                 {/* <i class="fa-regular fa-lightbulb"></i> */}
                 {/* <i class="fa-solid fa-lightbulb"></i> */}
@@ -24,7 +23,6 @@ export default function toggle() {
                     </div>
                 </label>
             </div>
-        </ThemeContext>
     )
 }
 

@@ -22,7 +22,8 @@ export default function welcome() {
   return (
     <>
     {/* <dark /> */}
-    <DarkMode />
+    {/* <DarkMode /> */}
+    <Toggle/>
     <div className="landing">
       <Type />
       <Fade delay={6800} duration={1500}>
