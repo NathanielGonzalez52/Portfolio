@@ -6,14 +6,13 @@ import {dark as DarkVariable} from "./dark";
 
 
 
-export default function projects() {
+export default function Home() {
   return (
     <>
-    <Navbar />
-      <div className="projects-home">
-          <h1 className="head">Projects</h1>
-      </div>
-    <Footer />
+    <DarkVariable>
+      <Navbar />
+      <Footer />
+    </DarkVariable>
     </>
   )
 }
