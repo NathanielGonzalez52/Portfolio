@@ -8,6 +8,7 @@
 --text_color: #000;
 --background_color: #FFF;
 --background_image: url("../../public/images/seigaiha.webp");
+--text_box: #FFF;
 }
 
 [data-theme = "dark"] {
@@ -16,6 +17,7 @@
 --text_color: #FFF;
 --background_color: #000;
 --background_image: url("../../public/images/connectwork.webp");
+--text_box: rgb(196, 185, 185);
 }
 
 .head {
@@ -80,11 +82,13 @@
     width: 17rem;
     font-size: 1.1rem;
     font-family: "Cormorant Garand", serif;  
+    background-color: var(--text_box);
 }
 
 #freeform {
     font-size: 1.2rem;
     font-family: "Cormorant Garand", serif;  
+    background-color: var(--text_box);
     /* padding: 2rem; */
 }
 

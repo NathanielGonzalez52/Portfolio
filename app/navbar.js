@@ -40,7 +40,7 @@ export default function navbar() {
 
   const light = "../images/NG-3.png";
 
-  const night = "../images/NG_night.png"
+  const night = "../images/NG_night_2.png"
 
     
   // if (selectedTheme === "dark") {

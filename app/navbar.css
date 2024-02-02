@@ -31,7 +31,7 @@
 
 .logo {
     width: 120%;
-    color: var(--button_text);
+    /* color: var(--button_text); */
 }
 
 /* path {
