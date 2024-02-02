@@ -8,8 +8,6 @@ import { useActivePath } from "./helper";
 import { ThemeContext } from './dark';
 
 
-
-
 export default function navbar() {
 
   // const [night, setNight] = useState("");
@@ -17,7 +15,6 @@ export default function navbar() {
   // export const mode = "";
 
   const {selectedTheme, toggleTheme} = useContext(ThemeContext);
-
 
   const checkActivePath = useActivePath()
 

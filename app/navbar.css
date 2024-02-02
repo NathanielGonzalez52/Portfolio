@@ -20,7 +20,6 @@
     --background_color: #FFF;
     --link_color: #b3b3b3;
     --line_color: #ffffff;
-
   }
 
 
@@ -33,8 +32,6 @@
 .logo {
     width: 120%;
     color: var(--button_text);
-    background-image: url("../public/images/NG-3.png");
-
 }
 
 /* path {
