@@ -16,6 +16,7 @@ export default function about() {
         <Navbar />
         <Fade>
         {/* <DarkMode /> */}
+        <div className="total-about">
         <Toggle />
             <div className="about txt">
                 <h1 className="about-me head">About Me</h1>
@@ -36,6 +37,7 @@ export default function about() {
                     <h2>Thank you!</h2>
                 </div>
             </div>
+        </div>
         </Fade>
             <Footer />
     </DarkVariable>

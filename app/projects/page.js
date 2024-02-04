@@ -1,9 +1,8 @@
 import React from 'react'
-import "./page.css";
 import Navbar from "../navbar";
 import Footer from "../footer";
-import {dark as DarkVariable} from "./dark";
-
+import {dark as DarkVariable} from "../dark";
+import Projects from "./projects";
 
 
 export default function Home() {
@@ -11,6 +10,7 @@ export default function Home() {
     <>
     <DarkVariable>
       <Navbar />
+      <Projects />
       <Footer />
     </DarkVariable>
     </>

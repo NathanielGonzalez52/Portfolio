@@ -20,13 +20,16 @@
 --text_box: rgb(196, 185, 185);
 }
 
+.total-contact {
+    background-image: var(--background_image);
+}
+
 .head {
     font-family: 'Oswald', sans-serif;
     color: var(--text_color)
 }
 
 .envelope {
-    background-image: var(--background_image);
     text-align: center;
     width: 100%;
     padding-top: 2.5rem;
@@ -35,7 +38,6 @@
 
 
 .contact {
-    background-image: var(--background_image);
     /* display: flex;
     flex-direction: row; */
 

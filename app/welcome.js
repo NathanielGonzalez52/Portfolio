@@ -24,15 +24,16 @@ export default function welcome() {
     <>
     {/* <dark /> */}
     {/* <DarkMode /> */}
-    <Toggle/>
-    <div className="landing">
-      <Type />
-      <Fade delay={6800} duration={1500}>
-        <a href="/projects"><button className="projects-btn">Projects</button></a>
-      </Fade>
-         </div>
-      <Footer/>
-    
+    <div className="total">
+      <Toggle />
+      <div className="landing">
+        <Type />
+        <Fade delay={6800} duration={1500}>
+          <a href="/projects"><button className="projects-btn">Projects</button></a>
+        </Fade>
+          </div>
+        <Footer/>
+    </div>
     </>
   )
 }
