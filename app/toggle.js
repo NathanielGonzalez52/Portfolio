@@ -9,7 +9,6 @@ export default function toggle() {
     const {selectedTheme, toggleTheme} = useContext(ThemeContext);
 
   return (
-
           <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
                 <input type="checkbox" 
@@ -18,11 +17,10 @@ export default function toggle() {
                 checked={ selectedTheme==="dark" }
                 />
                 <div class="slider round">
-                    <i class="fa-regular fa-sun"></i>
-                    <i class="fa-solid fa-moon"></i>
+                    {/* <i class="fa-regular fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i> */}
                 </div>
             </label>
         </div>
-
   )
 }
