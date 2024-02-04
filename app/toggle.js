@@ -17,6 +17,9 @@ export default function toggle() {
                 checked={ selectedTheme==="dark" }
                 />
                 <div class="slider round">
+                  <img className= "sun" src="../images/sun.svg" alt="sun"></img>   
+                  <img className= "moon" src="../images/moon.svg" alt="moon"></img>   
+
                     {/* <i class="fa-regular fa-sun"></i>
                     <i class="fa-solid fa-moon"></i> */}
                 </div>
