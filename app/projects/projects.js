@@ -40,7 +40,7 @@ export default function projects() {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1 
             }
           }
         ]
@@ -63,23 +63,25 @@ export default function projects() {
   return (
     <>
         <div className="slider-cont">
-    <Toggle />
-
-            <h1 className="project-header"> Projects </h1>
-            <Slider {...settings}>
-                <div className="pic-holder">
-                <img className="pic" alt="art" src="../../images/SenorTaco_1.png"></img>
-                </div>
-                <div>
-                <img className="pic" alt="art" src="../../images/SenorTaco_2.png"></img>
-                </div>
-                <div>
-                <img className="pic" alt="art" src="../../images/Luna.png"></img>
-
-
-                </div>
-                
-            </Slider>
+          <Toggle />
+          <h1 className="project-header"> Projects </h1>
+          <div className = "center">
+            <div className="react-slider">
+              <div className = "slider-shape">
+                <Slider {...settings}>
+                  <div>
+                    <img className="pic" alt="art" src="../../images/SenorTaco_1.png"></img>
+                  </div>
+                  <div>
+                    <img className="pic" alt="art" src="../../images/SenorTaco_2.png"></img>
+                  </div>
+                  <div>
+                    <img className="pic" alt="art" src="../../images/Luna.png"></img>
+                  </div>
+                </Slider>
+              </div>
+            </div>
+        </div>
         </div>
     </>
     );

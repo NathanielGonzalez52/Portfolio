@@ -30,22 +30,7 @@
     text-align: center;
     max-width: 100%;
     padding-bottom: 2rem;
-    /* padding-top: 2rem; */
     background-image: var(--background_image);
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;*/
-}
-
-.slider {
-    margin-top: 0.1%;
-    width: 85%;
-}
-
-.pic-container {
-    height: 100%;
-    overflow: visible;
 }
 
 .pic {
@@ -53,3 +38,25 @@
     cursor: pointer;
 }
 
+
+@media screen and (min-width:700px) {
+
+    .center {
+        display: flex;
+        background-color: var(--background_color);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .react-slider {
+        width: 38%;
+    }
+
+    .slider-shape {
+        width: 100%;
+    }
+
+}
+        
