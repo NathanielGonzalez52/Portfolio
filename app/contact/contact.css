@@ -22,6 +22,7 @@
 
 .total-contact {
     background-image: var(--background_image);
+    /* padding-bottom: 2.5rem; */
 }
 
 .head {
@@ -36,7 +37,6 @@
     padding-bottom: 0.7rem;
  }
 
-
 .contact {
     /* display: flex;
     flex-direction: row; */
@@ -44,7 +44,7 @@
 }
 
 .contact-details {
-    height: 70.6vh;
+    height: 60.6vh;
     text-align: center;
     font-family: "Cormorant Garand", serif;  
     color: var(--text_color);
@@ -63,6 +63,7 @@
 }
 
 .contact-me {
+    padding-top: 0.5rem;
     display: flex;
     flex-direction: column;
     /* align-items: flex-start; */
@@ -74,24 +75,32 @@
     /* background-color: yellow; */
 }
 
+.name {
+    background-color: var(--text_box);
+    border-width: 1px;
+}
 
-
-/* .connect {
-    padding-top: 1rem;
-} */
+label {
+    color: var(--text_color)
+}
 
 #frm-email {
     width: 17rem;
     font-size: 1.1rem;
     font-family: "Cormorant Garand", serif;  
     background-color: var(--text_box);
+    border-width: 1px;
 }
 
 #freeform {
     font-size: 1.2rem;
     font-family: "Cormorant Garand", serif;  
     background-color: var(--text_box);
-    /* padding: 2rem; */
+    /* padding-bottom: 2rem; */
+}
+
+.send-button {
+    padding-top: 1.3rem;
 }
 
 .send {
