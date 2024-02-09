@@ -55,7 +55,7 @@ export default function contact() {
                     <label>Email</label>
                     <input id="frm-email" type="email" name="user_email" />
                     <label>Message</label>
-                    <textarea id="freeform" name="freeform" name="message" />
+                    <textarea id="freeform" className="freeform" name="message" />
                     <div className="send-button">
                         <input className="send" type="submit" value= "Send" />
                     </div>
